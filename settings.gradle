@@ -1,1 +1,1 @@
-include ':app',":zhpush"
+include ":zhpush"
