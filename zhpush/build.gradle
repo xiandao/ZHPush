@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+
+
+android {
+    compileSdkVersion project.ANDROID_BUILD_COMPILE_SDK_VERSION
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion project.ANDROID_BUILD_MIN_SDK_VERSION
+        targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFile 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.zhpush.client.db'
+        targetGenDir 'src/main/java'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.github.cjztool:CLog:v1.0.0'
+    implementation 'org.greenrobot:greendao:3.2.0'
+}
