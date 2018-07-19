@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.google.code.gson:gson:2.8.5'
+    compileOnly 'com.google.code.gson:gson:2.8.5'
     implementation 'com.github.cjztool:CLog:v1.0.0'
     implementation 'org.greenrobot:greendao:3.2.0'
 }
