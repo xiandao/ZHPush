@@ -3,9 +3,8 @@
 
 ### 如图
 
-![image](pic/code.png)
+![image](pic/init.png)
 
-![image](pic/logcat.png)
 
 
 ### 用法
